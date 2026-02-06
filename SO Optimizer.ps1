@@ -589,7 +589,9 @@ function Invoke-Debloat {
         "*Microsoft.XboxGameOverlay*", "*Microsoft.XboxGamingOverlay*", "*Microsoft.XboxIdentityProvider*",
         "*Microsoft.XboxSpeechToTextOverlay*", "*Microsoft.ZuneMusic*", "*Microsoft.ZuneVideo*",
         "*Microsoft.Office.OneNote*", "*Microsoft.MicrosoftOfficeHub*", "*Microsoft.MixedReality.Portal*",
-        "*Microsoft.ScreenSketch*", "*Microsoft.Services.Store.Engagement*", "*Microsoft.SpotifyAB.SpotifyMustn*r
+        "*Microsoft.ScreenSketch*", "*Microsoft.Services.Store.Engagement*", "*Microsoft.SpotifyAB.SpotifyMusic*"
+    )
+    
     foreach ($app in $apps) {
         Safe-RemoveAppx $app
     }
